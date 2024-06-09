@@ -3,10 +3,46 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
 
 .container {
-	background: gray;
+	background: rgb(214, 213, 213);
 	width: 80vw;
 	height: 80vh;
+	max-width: 680px;
+	max-height: 680px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2%;
+	justify-content: center;
+	align-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.shape {
+	width: 45%;
+	height: 45%;
+	min-width: 100px;
+	min-height: 100px;
+}
+
+.shape-1 {
+	background: green;
+	border-radius: 50%;
+}
+
+.shape-2 {
+	background: blue;
+}
+
+.shape-3 {
+	background: yellow;
+}
+
+.shape-4 {
+	background: orange;
+	border-radius: 50%;
 }
