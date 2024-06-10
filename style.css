@@ -1,32 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	margin: 0;
-	font-family: Arial, sans-serif;
 }
 
 .container {
 	background: rgb(214, 213, 213);
-	width: 80vw;
-	height: 80vh;
-	max-width: 680px;
-	max-height: 680px;
 	display: flex;
-	flex-wrap: wrap;
-	gap: 2%;
 	justify-content: center;
-	align-content: center;
-	padding: 10px;
-	box-sizing: border-box;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
+	gap: 30px;
+	padding: 20px;
 }
 
 .shape {
-	width: 45%;
-	height: 45%;
-	min-width: 100px;
-	min-height: 100px;
+	width: 200px;
+	height: 200px;
 }
 
 .shape-1 {
@@ -45,4 +45,19 @@ body {
 .shape-4 {
 	background: orange;
 	border-radius: 50%;
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		width: 100vw;
+		height: 100vh;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		gap: 20px;
+	}
+
+	.shape {
+		width: 150px;
+		height: 150px;
+	}
 }
